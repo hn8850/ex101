@@ -13,8 +13,8 @@ import java.util.Random;
 
 
 public class MainActivity extends AppCompatActivity {
-    AlertDialog.Builder adb1,adb2,adb3,adb4,adb5;
-    AlertDialog ad1,ad2,ad3,ad4,ad5;
+    AlertDialog.Builder adb1, adb2, adb3, adb4, adb5;
+    AlertDialog ad1, ad2, ad3, ad4, ad5;
     Random rn;
     View bg;
 
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     public void two(View view) {
         adb2.setMessage("Its wings are too small to get\n" +
                 "its fat little body off the ground.");
-        adb2.setTitle("");
+        adb2.setTitle(" ");
         adb2.setIcon(R.drawable.bee);
         ad2 = adb2.create();
         ad2.show();
@@ -52,7 +52,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void three(View view) {
         adb3.setMessage("The bee, of course, flies anyway");
-        adb3.setIcon(R.drawable.bee);
+        adb3.setTitle(" ");
+        adb3.setIcon(R.drawable.jazz);
         adb3.setNegativeButton("Close", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
